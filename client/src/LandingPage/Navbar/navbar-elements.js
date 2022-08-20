@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import {NavLink } from 'react-router-dom';
 
 export const Nav =  styled.nav`
 background: #1C284E;
@@ -51,6 +51,41 @@ display: inline-block;
 text-align: center;
 color: #fff;
 
+    .isInActive{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        height: 100%;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+
+        ${'' /* &:hover{
+            text-decoration: none;
+            color: #fff;
+            background: #6DB943;
+        } */}
+    }
+
+    .isActive{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        height: 100%;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background: yellow;
+        color: #fff;
+        background: #6DB943;
+    }
+}
+
 
 @media screen and (max-width: 910px){
     width: 100%;
@@ -59,7 +94,7 @@ color: #fff;
 `;
 
 
-export const NavLinks = styled.a`
+export const NavLinks = styled(NavLink)`
 color: #fff;
 display: flex;
 align-items: center;
@@ -68,10 +103,23 @@ padding: 0.5rem 2rem;
 height: 100%;
 font-size: 14px;
 text-transform: uppercase;
+cursor: pointer;
 
-&:hover{
-    text-decoration: none;
+
+
+&:focus{
+     background: yellow;
+     color: #fff;
+    background: #6DB943;
 }
+
+${'' /* &:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #6DB943;
+} */}
+
+
 
 @media screen and (max-width: 910px){
     text-align: center;

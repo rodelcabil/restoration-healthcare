@@ -13,6 +13,7 @@ export const AboutContainer = styled.div`
         padding: 0 200px;
     }
     h4{
+        
         font-size: 20px;
         font-weight: 400;
         color: #1A284D;
