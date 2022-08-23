@@ -4,7 +4,7 @@ export const ServiceCardContainer = styled.div`
 
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
     align-items: center;
 
     img{
@@ -24,6 +24,10 @@ export const ServiceCardContainer = styled.div`
         color: #1A284D;
         padding: 0;
         margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 910px){
+        max-width: auto;
     }
 
 `

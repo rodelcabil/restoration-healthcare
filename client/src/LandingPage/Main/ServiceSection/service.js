@@ -1,7 +1,7 @@
 import React from "react";
 import ReusableScheduleButton from "../../../ReusableComponents/ScheduleButton";
 import ServiceCard from "../../../ReusableComponents/ServiceCard/ServiceCard";
-import { RowContainer, ServiceContainer, StatisticsContainer } from "./service-elements";
+import { RowContainer, ServiceContainer, StatisticsContainer, RiskRowContainer } from "./service-elements";
 import SaveMoneyLogo from '../../../images/service/1.PNG';
 import EndinsulinDependenceLogo from '../../../images/service/2.PNG';
 import FeelTheDifferenceLogo from '../../../images/service/3.PNG';
@@ -21,7 +21,7 @@ const Service = () => {
         <h1>OUR SERVICE</h1>
         <br />
         <h4>
-          You deserve a plan that will get you back to optimal<br /> Health with the support of professionals who care.
+          You deserve a plan that will get you back to optimal Health with the support of professionals who care.
         </h4>
         <RowContainer small>
           <ServiceCard imgPath={SaveMoneyLogo} name="Save Money" details="Say goodbye to expensive treatments and doctor visits with lifestyle changes that actually work." />
@@ -31,17 +31,17 @@ const Service = () => {
         <br />
         <ReusableScheduleButton bgcolor="#6DB943" color="#fff" />
         <br /><br /><br />
-        <h1>EXTRA ORDINARY RESULTS IN OUR<br /> HIGHEST RISK PATIENTS</h1>
+        <h1>EXTRA ORDINARY RESULTS IN OUR HIGHEST RISK PATIENTS</h1>
       </ServiceContainer>
       <StatisticsContainer >
-        <RowContainer>
+        <RiskRowContainer>
           <StatisticsCard imgPath={TrigylyceridesIMG} name="TRIGLYCERIDES" statistics="44.1% decline" details="Initial level: Above 500mg/dl" />
           <StatisticsCard imgPath={FastingPlasmaGlucoseIMG} name="Fasting Plasma Glucose" statistics="19.9% decline" details="Initial level: Above 500mg/dl" />
           <StatisticsCard imgPath={TotalCholestroalIMG} name="Total Cholestroal" statistics="19.8% decline" details="Initial level: Above 500mg/dl" />
           <StatisticsCard imgPath={LDLCholestroalIMG} name="LDL Cholestroal" statistics="16.1% decline" details="Initial level: Above 500mg/dl" />
           <StatisticsCard imgPath={SyndromineSyndromeIMG} name="Syndromine Syndrome" statistics="45.1% decline" details="Initial level: Above 500mg/dl" />
           <StatisticsCard imgPath={BodyMassIndexIMG} name="Body Mass Index" statistics="50.1% decline" details="Initial level: Above 500mg/dl" />
-        </RowContainer>
+        </RiskRowContainer>
       </StatisticsContainer>
     </>
   );

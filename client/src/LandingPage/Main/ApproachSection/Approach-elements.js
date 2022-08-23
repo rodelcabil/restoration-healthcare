@@ -26,19 +26,35 @@ export const ColumnContainer = styled.div`
     h1{
         font-size: 40px;
         color: #fff;
-        padding: 0 200px;
+        max-width: 1000px;
     }
 
     h4{
         font-size: 20px;
         font-weight: 400;
         color: #fff;
-        padding: 0 100px;
+        max-width: 1000px;
         line-height: 1.5;
     }
 
     .highlight-text{
         color: #6DB943;
+    }
+
+    @media screen and (max-width: 910px){
+        padding: 10px;
+
+        h1{
+            font-size: 35px;
+            
+        }
+
+        h4{
+            font-size: 20px;
+            
+        }
+
+        
     }
 
 `

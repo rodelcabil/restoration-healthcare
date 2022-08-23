@@ -4,7 +4,7 @@ export const StatisticsCardContainer = styled.div`
 
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -38,6 +38,32 @@ export const StatisticsCardContainer = styled.div`
         line-height: 1.5;
         font-weight: 500;
        
+    }
+
+    @media screen and (max-width: 910px){
+        width: 300px;
+
+        img{
+            margin-bottom: 10px;
+            height: 130px;
+        }
+
+        .name{
+            font-size: 20px;
+           
+        }
+
+        .statistics{
+            font-size: 20px;
+           
+        }
+
+        
+        .details{
+            font-size: 15px;
+            
+        
+        }
     }
 
 `

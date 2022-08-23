@@ -9,7 +9,7 @@ import Rosalie from '../../../images/Testimonial/3.avif'
 const Testimonial = () => {
   return (
     <TestimonialContainer>
-        <h1>"After just 45 days in the program i'm insulin free and my life<br/> is back to normal!"</h1>
+        <h1>"After just 45 days in the program i'm insulin free and my life is back to normal!"</h1>
         <br/><br/>
         <RowContainer>
             <TestimonialCard imgPath={John} name="John O. Clark" testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore." />

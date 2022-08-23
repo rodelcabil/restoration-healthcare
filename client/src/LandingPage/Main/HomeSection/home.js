@@ -13,7 +13,7 @@ const Home = () => {
         <h4>
             A 12-week lifestyle-coaching program scientifically proven to restore your health and be medication free.
         </h4>
-        <br/><br/>
+        <br/>
         <ReusableScheduleButton bgcolor="#fff" color="black"/>
       </ColumnContainer>
     </HomeContainer>

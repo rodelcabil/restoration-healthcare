@@ -1,23 +1,41 @@
 import styled  from 'styled-components';
 
 export const AboutContainer = styled.div`
-   
+ 
     background: #F9F9F9;
     padding: 60px 30px;
     margin: auto;
-
+    align-items: center;
 
     h1{
         font-size: 40px;
         color: #1A284D;
-        padding: 0 200px;
+        max-width: 1000px;
+        margin: auto;
     }
     h4{
         
         font-size: 20px;
         font-weight: 400;
         color: #1A284D;
-        padding: 0 290px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    @media screen and (max-width: 910px){
+        padding: 10px;
+        margin: auto;
+        h1{
+            font-size: 35px;
+            
+        }
+
+        h4{
+            font-size: 20px;
+            
+        }
+
+        
     }
 `
 
@@ -48,7 +66,7 @@ export const RowContainer = styled.div`
     }
 
     .details-item{
-        width: 670px;
+        max-width: 670px;
         display: flex;
         align-items: center;
         text-align: left;
@@ -72,5 +90,26 @@ export const RowContainer = styled.div`
             line-height: 1.4;
             
         }
+    }
+
+
+    @media screen and (max-width: 910px){
+        display: block;
+        margin: auto;
+        padding: 10px;
+
+        img{
+            height: 70%;
+            width: 100%;    
+            margin-bottom: 20px;
+        }
+
+        .details-item{
+            width: 100%;
+            margin-bottom:20px;
+
+            
+        }
+
     }
 `

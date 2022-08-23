@@ -10,6 +10,17 @@ export const FooterContainer = styled.div`
     span{
         color: white;
        font-size: 12px;
+
+       a{
+            text-decoration: none;
+            color: #6DB943;
+            cursor: pointer;
+       }
+    }
+
+    @media screen and (max-width: 910px){
+        padding: 10px;
+       
     }
 
 `
@@ -184,6 +195,19 @@ export const RowContainer = styled.div`
     }
     
 
-    
+    @media (min-width: 651px) and (max-width: 1000px){
+        grid-template-rows: auto auto auto auto auto; 
+        grid-template-columns: 350px 350px ;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        justify-items: left;
+    }
+    @media screen and (max-width: 650px){
+        grid-template-rows: auto auto; 
+        grid-template-columns: 350px ;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        justify-items: left;
+    }
 
 `

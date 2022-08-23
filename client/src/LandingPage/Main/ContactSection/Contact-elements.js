@@ -9,13 +9,27 @@ export const ContactContainer = styled.div`
     h1{
         font-size: 40px;
         color: #1A284D;
-        padding: 0 180px;
+        max-width: 1000px;
+        margin: auto;
     }
     h4{
         font-size: 20px;
         font-weight: 400;
         color: #1A284D;
-        padding: 0 290px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    @media screen and (max-width: 910px){
+        padding: 10px;
+        h1{
+            font-size: 35px;
+            
+        }
+        h4{
+            font-size: 20px;
+            
+        }
     }
 `
 
@@ -40,6 +54,9 @@ export const RowContainer = styled.div`
         font-weight: 600;
         height: 30px;
         
+        @media screen and (max-width: 650px){
+            width: 100%;
+        }
     }
 
     .btn-submit{
@@ -62,6 +79,18 @@ export const RowContainer = styled.div`
             color:  #fff;
             transition: background 0.5s;
         }
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px){
+        grid-template-rows: auto auto ; 
+        grid-template-columns: 350px 350px ;
+        grid-row-gap: 20px;
+    }
+
+    @media screen and (max-width: 650px){
+        grid-template-rows: auto auto ; 
+        grid-template-columns: 100%; ;
+        grid-row-gap: 20px;
     }
 
 `

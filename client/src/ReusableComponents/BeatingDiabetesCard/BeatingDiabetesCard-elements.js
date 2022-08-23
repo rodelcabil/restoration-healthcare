@@ -32,5 +32,9 @@ export const BeatingDiabetesCardContainer = styled.div`
         margin-bottom: 10px;
     }
 
+    @media screen and (max-width: 910px){
+        width: auto;
+    }
+
 `
 

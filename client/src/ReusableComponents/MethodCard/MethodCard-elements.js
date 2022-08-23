@@ -40,5 +40,9 @@ export const MethodCardContainer = styled.div`
         line-height: 1.5;
     }
 
+    @media screen and (max-width: 910px){
+        width: 300px;
+    }
+
 `
 

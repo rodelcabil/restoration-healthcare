@@ -19,7 +19,7 @@ const About = () => {
         <img src={Doctors} alt="Doctors" />
         <div className="details">
           <h2>CAN YOU RELATE?</h2>
-          <br /><br />
+          <br />
           <div className="details-item">
             <div className="icon-container">
               <HiCheckCircle className="check-icon" />

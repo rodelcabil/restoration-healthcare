@@ -23,7 +23,6 @@ export const ScheduleButton = styled.button`
         
         height: 40px;
         margin: auto;
-        margin-top: 20px;
-        margin-bottom: 30px
+       
     } 
 `;

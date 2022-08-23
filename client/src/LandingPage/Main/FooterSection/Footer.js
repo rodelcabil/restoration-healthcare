@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
         </RowContainer>
         <br/>
-        <span>Copy Right By Restoration Healthcare All Right Reserved 2022</span>
+        <span >Copy Right By Restoration Healthcare All Right Reserved 2022 | UI/UX design by <a href="https://www.behance.net/dxdesignz" target="_blank">DX Designz</a></span>
     </FooterContainer>
   )
 }
